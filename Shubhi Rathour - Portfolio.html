@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/DELL/OneDrive/Desktop/project/pro02.html -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubhi Rathour - Portfolio</title>
+
+  <!-- External CSS / Icons -->
+  <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <link rel="stylesheet" href="./Shubhi Rathour - Portfolio_files/aos.css">
+
+  <style>
+    :root{
+      --bg:#0a0a1a; --card:#111130; --accent:#8a2be2; --muted:#b8b8b8; --glass: rgba(255,255,255,0.04);
+    }
+    html,body{height:100%;margin:0;font-family:Poppins,system-ui,Arial;background:linear-gradient(135deg,var(--bg),#121236);color:#fff}
+    nav{position:fixed;left:0;right:0;top:0;z-index:100;backdrop-filter:blur(8px);background:linear-gradient(180deg,rgba(10,10,20,0.6),rgba(10,10,20,0.2));border-bottom:1px solid rgba(138,43,226,0.08)}
+    .nav-container{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1rem}
+    .logo{font-weight:700;color:var(--accent);font-size:1.2rem}
+    .links{display:flex;gap:1rem;align-items:center}
+    .link a{color:#e6e6e6;text-decoration:none;padding:0.4rem 0.6rem;border-radius:8px;transition:all .2s}
+    .link a.active,.link a:hover{background:var(--glass);color:#fff;box-shadow:0 6px 18px rgba(138,43,226,0.08)}
+    .contact-btn a{background:linear-gradient(135deg,var(--accent),#9370db);padding:0.5rem 1rem;border-radius:20px;color:#fff}
+
+    .container{max-width:1100px;margin:0 auto;padding:6rem 1rem 4rem;display:flex;gap:2rem;align-items:center}
+    .main-left{flex:1;min-width:280px}
+    .main-right{flex:1;display:flex;justify-content:center}
+
+    h1{font-size:2.4rem;margin:0 0 .6rem;background:linear-gradient(135deg,var(--accent),#9370db);-webkit-background-clip:text;color:transparent}
+    .typewriter span{display:inline-block;font-weight:600;color:#e8dbff}
+    p.lead{color:var(--muted);line-height:1.6}
+
+    .profile-photo{width:220px;height:220px;border-radius:50%;object-fit:cover;border:6px solid rgba(138,43,226,0.35);box-shadow:0 8px 40px rgba(138,43,226,0.18);transition:transform .4s,box-shadow .4s}
+    .profile-photo:hover{transform:scale(1.05);box-shadow:0 14px 60px rgba(138,43,226,0.35)}
+
+    .social-links{margin-top:1rem;display:flex;gap:0.6rem}
+    .social-links a{width:40px;height:40px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;background:rgba(138,43,226,0.06);color:var(--accent);text-decoration:none}
+
+    .btn{margin-top:1.2rem}
+    .btn button{background:transparent;border:2px solid var(--accent);padding:.6rem 1rem;border-radius:12px;color:#fff;cursor:pointer}
+
+    section{padding:4rem 1rem}
+    .section h2{color:#fff;margin-bottom:.6rem}
+    .section ul{color:var(--muted);line-height:1.7}
+
+    /* modal popup */
+   .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.6);display:none;align-items:center;justify-content:center;z-index:9999}
+    .modal{background:linear-gradient(180deg,#0f0f2a,#0b0b1f);padding:1.6rem;border-radius:14px;max-width:560px;width:90%;color:#fff;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    .modal h3{margin-top:0;color:var(--accent)}
+    .modal p{color:var(--muted)}
+    .modal .close{background:transparent;border:2px solid var(--accent);padding:.5rem .8rem;border-radius:10px;color:#fff;cursor:pointer;margin-top:1rem}
+
+
+    /* floating home */
+    .floating-home{position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,var(--accent),#9370db);width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(138,43,226,0.2);cursor:pointer;z-index:999}
+
+    /* responsive */
+    @media(max-width:880px){.container{flex-direction:column;gap:1.5rem}.profile-photo{width:180px;height:180px}}
+
+    /* dark mode */
+    .dark-toggle{background:rgba(255,255,255,0.04);padding:.35rem .6rem;border-radius:10px;color:var(--accent);border:1px solid rgba(138,43,226,0.08);cursor:pointer}
+  </style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  <nav>
+     <div class="nav-container">
+      <div class="logo">Shubhi Rathour</div>
+      <div class="links">
+        <div class="link"><a href="#home">Home</a></div>
+        <div class="link"><a href="#about">About</a></div>
+        <div class="link"><a href="#skills">Skills</a></div>
+        <div class="link"><a href="#services">Experience</a></div>
+        <div class="link"><a href="#qualification">Qualification</a></div>
+        <div class="link contact-btn"><a href="#contact">Contact</a></div>
+        <div style="width:8px"></div>
+        <button id="themeToggle" class="dark-toggle">Dark</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="home" class="container">
+
+    <div class="main-left">
+      <h1>Hey, I'm <span>Shubhi Rathour</span></h1>
+      <div class="typewriter aos-init aos-animate" data-aos="fade-left"><span>AI &amp; ML Student</span></div>
+
+      <p class="lead aos-init aos-animate" data-aos="fade-up">I am a Data Analyst and a dedicated Computer Science student specializing in AI &amp; Machine Learning, with a strong foundation in electronics. I have hands-on experience in data entry, data analysis, and dashboard creation, and I am actively building my career in remote tech and data roles. Known for my consistency, analytical mindset, and quick learning ability, I aim to grow in AI-driven problem-solving, automation, and digital productivity.</p>
+
+      <div class="social-links aos-init aos-animate" data-aos="fade-up">
+        <a href="file:///C:/Users/DELL/OneDrive/Desktop/project/pro02.html#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubhi-rathour-93194a242" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/share/1FW2dMqYPw/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+
+      <!-- ⭐ UPDATED DOWNLOAD BUTTON -->
+      <div class="btn aos-init aos-animate" data-aos="fade-up">
+        <button id="downloadBtn">Download CV</button>
+      </div>
+    </div>
+
+    <div class="main-right aos-init aos-animate" data-aos="zoom-in">
+      <img class="profile-photo" src="./Shubhi Rathour - Portfolio_files/WhatsApp Image 2025-09-15 at 12.04.26.jpeg" alt="Shubhi">
+    </div>
+  </main>
+
+  <!-- Rest of your sections remain same -->
+
+  <script src="./Shubhi Rathour - Portfolio_files/aos.js.download"></script>
+  <script>
+    AOS.init({offset:0});
+
+    /* ⭐ FIXED DOWNLOAD BUTTON USING YOUR UPLOADED PDF */
+
+document.getElementById('downloadBtn').addEventListener('click', ()=>{
+  const a = document.createElement('a');
+  a.href = "./Shubhi Rathour - Portfolio_files/assets/ShubhiRathour_CV/assetsShubhi_Rathour_CV.pdf.pdf";
+  a.download = "Shubhi_Rathour_CV.pdf"; 
+  a.click();
+});
+</script>
+
+  
+
+  <section id="projects" class="section aos-init aos-animate" data-aos="fade-up">
+  <h2>Projects</h2>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(48px,1fr));gap:1.2rem;margin-top:1rem;">
+
+    <!-- SALES DASHBOARD -->
+    <div class="exp-card" style="cursor:pointer" onclick="openProject('Sales Dashboard (Excel)','Interactive Excel Dashboard with KPIs, charts, slicers.')">
+      <h3>Sales Dashboard (Excel)</h3>
+      <p>Interactive Dashboard with KPIs</p>
+    </div>
+<button class="btn" onclick="openSalesDashboard()" 
+style="background:var(--accent);color:white;border:0;padding:0.6rem 1rem;border-radius:10px;cursor:pointer;">
+  View Sales Dashboard
+</button>
+
+<script>
+function openSalesDashboard(){
+  document.getElementById("modalTitle").textContent = "Sales Dashboard";
+
+  document.getElementById("modalBody").innerHTML = `
+    <img src="./Shubhi Rathour - Portfolio_files/assets/Sales%20Dashboard/Screenshot%202025-11-29%20153553.png"
+         style="width:100%;border-radius:12px;box-shadow:0 0 20px rgba(0,0,0,0.4)">
+  `;
+
+  document.getElementById("modalBackdrop").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+</script>
+
+
+   
+      <!-- DATA CLEANING PROJECT -->
+<div class="exp-card" style="cursor:pointer" onclick="openProject('Data Cleaning Project (MySQL)','Performed full data cleaning, removal of; duplicates, data validation, filtering, joins, and query optimization using MySQL. Included 20+ SQL queries for real-world problem solving.')">
+  <h3>Data Cleaning Project (SQL)</h3>
+  <p>20+ SQL Queries | Cleaning | Filtering | Validation | Analysis</p>
+</div>
+
+<button class="btn" onclick="openSQL()" style="background:var(--accent);color:white;border:0;padding:0.6rem 1rem;border-radius:10px;cursor:pointer;">
+  View SQL Script
+</button>
+<script>
+function openSQL(){
+  const sqlCode = `
+CREATE DATABASE InterviewQues;
+USE InterviewQues;
+
+CREATE TABLE Sales(
+  OrderID INT, OrderDate DATE, CustomerName VARCHAR(30), Segment VARCHAR(30),
+  City VARCHAR(30), State VARCHAR(30), Region VARCHAR(30), Category VARCHAR(30),
+  SubCategory VARCHAR(30), Quantity INT, Sales FLOAT, Discount FLOAT, Profit FLOAT
+);
+
+CREATE TABLE Employee(
+  EmployeeID INT, Name VARCHAR(30), Department VARCHAR(30),
+  Designation VARCHAR(30), Salary FLOAT, JoiningDate DATE, City VARCHAR(30)
+);
+
+CREATE TABLE Student(
+  StudentID INT, Name VARCHAR(30), Class INT, DOB DATE, Gender VARCHAR(30),
+  City VARCHAR(30), Marks INT, Address VARCHAR(30)
+);
+
+-- 1. Display all employee records
+SELECT * FROM Employee;
+
+-- 2. Employee salary > 50,000
+SELECT Name, Salary FROM Employee WHERE Salary > 50000;
+
+-- 3. Students in Class 12 with Marks > 450
+SELECT Name, Class, Marks FROM Student WHERE Marks > 450;
+
+-- 4. Orders of Technology Category
+SELECT * FROM Sales WHERE Category = 'Technology';
+
+-- 5. Count employees per department
+SELECT Department, COUNT(*) AS Total_Employees FROM Employee GROUP BY Department;
+
+-- 6. Sales in East Region
+SELECT * FROM Sales WHERE Region = 'East';
+
+-- 7. Second highest salary
+SELECT Salary FROM Employee ORDER BY Salary DESC LIMIT 1 OFFSET 1;
+
+-- 8. Names starting with A
+SELECT * FROM Employee WHERE Name LIKE 'A%';
+
+-- 9. Orders with discount > 0.2
+SELECT * FROM Sales WHERE Discount > 0.2;
+
+-- 10. Employees joined after 2018
+SELECT * FROM Employee WHERE JoiningDate > '2018-01-01';
+
+-- 11. Student count per class
+SELECT Class, COUNT(*) AS Total FROM Student GROUP BY Class;
+
+-- 12. Total profit in Technology
+SELECT SUM(Profit) FROM Sales WHERE Category='Technology';
+
+-- 13. All Managers
+SELECT * FROM Employee WHERE Designation='Manager';
+
+-- 14. Quantity > 5
+SELECT * FROM Sales WHERE Quantity > 5;
+
+-- 15. Salary between 40k and 80k
+SELECT * FROM Employee WHERE Salary BETWEEN 40000 AND 80000;
+
+-- 16. Avg marks per class
+SELECT Class, AVG(Marks) FROM Student GROUP BY Class;
+
+-- 17. Total sales per Segment
+SELECT Segment, SUM(Sales) FROM Sales GROUP BY Segment;
+
+-- 18. Top 5 orders by profit
+SELECT * FROM Sales ORDER BY Profit DESC LIMIT 5;
+  `;
+
+  document.getElementById("modalTitle").textContent = "Data Cleaning SQL Script";
+  document.getElementById("modalBody").innerHTML = `<pre style="white-space:pre-wrap;font-size:13px;">${sqlCode}</pre>`;
+  document.getElementById("modalBackdrop").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+</script>
+
+<!-- AI PREDICTION MODEL PROJECT -->
+<div class="exp-card" style="cursor:pointer" onclick="openProject('AI Prediction Model (Python)','This project builds an end-to-end AI/ML prediction system using Python, Pandas, Scikit-Learn, and Random Forest. It includes data loading, cleaning, encoding, model training, evaluation, and visualization.')">
+  <h3>AI Prediction Model</h3>
+  <p>ML Model | Random Forest | Preprocessing | Evaluation</p>
+</div>
+
+<button class="btn" onclick="openAIPython()" style="background:var(--accent);color:white;border:0;padding:0.6rem 1rem;border-radius:10px;cursor:pointer;">
+  View AI Model Code
+</button>
+<script>function openAIPython(){
+  const aiCode = `
+# AI Prediction Model - Ready to Run
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
+from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
+from sklearn.metrics import mean_squared_error, r2_score, accuracy_score, classification_report
+
+file_path = input("Enter CSV file path: ")
+data = pd.read_csv("C:\\Users\\DELL\\OneDrive\\Desktop\\project\\assets folder\\Big_Database.csv.csv")
+
+data = data.fillna(data.mean(numeric_only=True))
+data = data.fillna('Unknown')
+
+target_column = input("Enter the target column to predict: ")
+
+for col in data.select_dtypes(include=['object']).columns:
+    if col != target_column:
+        data[col] = LabelEncoder().fit_transform(data[col])
+
+if data[target_column].dtype == 'object':
+    data[target_column] = LabelEncoder().fit_transform(data[target_column])
+    is_classification = True
+else:
+    is_classification = False
+
+X = data.drop(target_column, axis=1)
+y = data[target_column]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+if is_classification:
+    model = RandomForestClassifier(random_state=42)
+else:
+    model = RandomForestRegressor(random_state=42)
+
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)
+
+if is_classification:
+    print("Accuracy:", accuracy_score(y_test, y_pred))
+    print(classification_report(y_test, y_pred))
+else:
+    print("MSE:", mean_squared_error(y_test, y_pred))
+    print("R2:", r2_score(y_test, y_pred))
+`;
+
+  modalTitle.textContent = "AI Prediction Model - Python Code";
+  modalBody.innerHTML = `<pre style="white-space:pre-wrap;font-size:13px;">${aiCode}</pre>`;
+  modalBackdrop.style.display = "flex";
+}
+</script>
+  </section>
+
+<!-- about -->
+  <section id="about" class="section"><h2>About Me</h2><p>Quality Executive with hands-on experience in audits, documentation, CAPA, and process optimization at Univlabs India Pvt. Ltd. Previously worked as a Production Engineer at Mitsuba India, gaining in-depth knowledge of production systems and quality standards. I’m passionate about analyzing data, improving operational performance, and implementing solutions that reduce errors and boost efficiency across processes.</p></section>
+ <!-- Skills -->
+  <section id="skills" class="section"><h2>Skills</h2>
+    <ul>
+      <li>Ensure product compliance through effective quality management and inspection. <li>
+
+ <li>Use RCA techniques to identify root causes and drive long-term solutions. <li>
+
+ <li>Apply SPC tools to monitor process performance and maintain quality consistency. <li>
+
+ <li>Lead quality audits, presenting findings with clear, actionable insights. <li>
+
+ <li>Perform data-driven analysis using Excel and MySQL to guide improvements. <li>
+
+ <li>Execute CAPA initiatives that reduce defects and enhance operational efficiency. <li> </ul>
+  </section>
+
+  
+  <!-- services -->
+  <section id="services" class="section"><h2>Experience</h2>
+    <div class="exp-card"><h3>Quality Executive — Univlabs India Pvt Ltd</h3><p>2024 - Present</p><ul><li>Conducted product inspections &amp; ensured compliance.</li><li>Applied CAPA for production issues resolution.</li><li>Coordinated supplier audits &amp; reporting.</li><li>Improved processes using Kaizen.</li></ul></div>
+    <div class="exp-card" style="margin-top:1rem"><h3>Production Executive — Mitsuba India Pvt Ltd</h3><p>2021 - 2023</p><ul><li>Created &amp; maintained technical documentation.</li><li>Managed SOPs and workflow instructions.</li><li>Optimized resource allocation.</li></ul></div>
+  </section>
+<!-- Experience -->
+  <section id="services" class="section"><h2>Experience</h2>
+    <div class="exp-card">
+      <h3>Quality Executive — Univlabs India Pvt Ltd</h3>
+      <p>2024 - Present</p>
+      <ul>
+        <li>Conducted product inspections & ensured compliance.</li>
+        <li>Applied CAPA for production issues resolution.</li>
+        <li>Coordinated supplier audits & reporting.</li>
+        <li>Improved processes using Kaizen.</li>
+      </ul>
+    </div>
+    <div class="exp-card" style="margin-top:1rem">
+      <h3>Production Executive — Mitsuba India Pvt Ltd</h3>
+      <p>2021 - 2023</p>
+      <ul>
+        <li>Created & maintained technical documentation.</li>
+        <li>Managed SOPs and workflow instructions.</li>
+        <li>Optimized resource allocation.</li>
+      </ul>
+    </div>
+  </section>
+  <!-- qualification -->
+  <section id="qualification" class="section"><h2>Education</h2>
+    <div class="edu-card"><h3>B.Tech in CSE (AI &amp; ML)</h3><p>B.N. College of Engineering — 2023–2026 (Pursuing)</p></div>
+    <div class="edu-card" style="margin-top:0.8rem"><h3>Diploma in Electronics Engineering</h3><p>Gov. Girls Polytechnic, Lucknow — 80% (2018–2021)</p></div>
+    <div class="edu-card" style="margin-top:0.8rem"><h3>Intermediate</h3><p>Agarwal Public Inter College — 67% (2016–2018)</p></div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact" class="section"><h2>Contact Me</h2>
+    <p><i class="fa-solid fa-phone"></i> 9696880077</p>
+    <p><i class="fa-solid fa-envelope"></i> 169shubhirathour@gmail.com</p>
+    <p><i class="fa-solid fa-location-dot"></i> Sitapur, India</p>
+  </section>
+  <!-- modal for popups -->
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal" role="dialog" aria-modal="true">
+      <h3 id="modalTitle"></h3>
+      <p id="modalBody"></p>
+      <div style="text-align:center"><button class="close" id="modalClose">Close</button></div>
+    </div>
+  </div>
+
+  <!-- floating home -->
+   <div class="floating-home" id="floatingHome" title="Go Home"><i class="fa-solid fa-house-chimney"></i></div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+AOS.init({ offset: 0 });
+
+/* --------------------------
+   THEME TOGGLE
+--------------------------- */
+const themeToggle = document.getElementById("themeToggle");
+let dark = true;
+themeToggle.addEventListener("click", () => {
+  if (dark) {
+    document.documentElement.style.setProperty("--bg", "#050513");
+    document.body.style.background =
+      "linear-gradient(135deg,#050513,#0f0f2b)";
+    themeToggle.textContent = "Light";
+  } else {
+    document.documentElement.style.setProperty("--bg", "#f3f4f6");
+    document.body.style.background =
+      "linear-gradient(135deg,#ffffff,#f8f9fb)";
+    themeToggle.textContent = "Dark";
+  }
+  dark = !dark;
+});
+
+/* --------------------------
+   TYPEWRITER
+--------------------------- */
+const roles = [
+  "Quality Executive",
+  "AI & ML Student",
+  "Data Analyst",
+  "Production Engineer",
+];
+let rIndex = 0;
+setInterval(() => {
+  document.querySelector(".typewriter span").textContent =
+    roles[rIndex];
+  rIndex = (rIndex + 1) % roles.length;
+}, 2200);
+
+/* --------------------------
+   NAV + POPUP HANDLER
+--------------------------- */
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav .link a");
+
+function onScroll() {
+  let current = "";
+  sections.forEach((sec) => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 180;
+    const height = sec.offsetHeight;
+    if (top >= offset && top < offset + height) current = sec.id;
+  });
+
+  navLinks.forEach((a) => {
+    a.classList.remove("active");
+    if (a.getAttribute("href") === `#${current}`) {
+      a.classList.add("active");
+    }
+  });
+}
+window.addEventListener("scroll", onScroll);
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const target = link.getAttribute("href");
+
+    const popupTargets = [
+      "#about",
+      "#skills",
+      "#services",
+      "#qualification",
+      "#projects",
+      "#contact",
+    ];
+
+    if (popupTargets.includes(target)) {
+      e.preventDefault();
+      openModalFor(target);
+      return;
+    }
+
+    e.preventDefault();
+    document
+      .querySelector(target)
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+/* --------------------------
+   POPUP DATA
+--------------------------- */
+const modalMap = {
+  "#about": {
+    title: "About Me",
+    body:
+      "I am Shubhi Rathour — Quality Executive and AI & ML student with experience in inspections, audits, documentation, and data analytics.",
+  },
+
+  "#skills": {
+    title: "My Skills",
+    body:
+      "• Quality Management\n• RCA\n• SPC\n• Excel\n• MySQL\n• Data Analysis\n• Dashboard Creation\n• CAPA",
+  },
+
+  "#services": {
+    title: "Experience",
+    body:
+      "Quality Executive at Univlabs (2024–Present).\nProduction Executive at Mitsuba (2021–2023).",
+  },
+
+  "#qualification": {
+    title: "Qualification",
+    body:
+      "• Diploma in Electronics\n• B.Tech CSE (AI & ML) Pursuing\n• Intermediate (67%)",
+  },
+
+  "#projects": {
+    title: "Projects",
+    body:
+      "• Sales Dashboard (Excel)\n• Data Cleaning (SQL)\n• AI Prediction Model\n• Automation Scripts",
+  },
+
+  "#contact": {
+    title: "Contact",
+    body:
+      "Phone: 9696880077\nEmail: 169shubhirathour@gmail.com\nLocation: Sitapur, India",
+  },
+};
+
+/* --------------------------
+   OPEN POPUP FUNCTION
+--------------------------- */
+const modalBackdrop = document.getElementById("modalBackdrop");
+const modalTitle = document.getElementById("modalTitle");
+const modalBody = document.getElementById("modalBody");
+const modalClose = document.getElementById("modalClose");
+
+/* SMALL UTILITY: openProject used by some onclick attributes */
+function openProject(title, body){
+  modalTitle.textContent = title;
+  // allow some HTML but keep it simple
+  modalBody.innerText = body;
+  modalBackdrop.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function openModalFor(target) {
+  const data = modalMap[target];
+  if (!data) return;
+
+  modalTitle.textContent = data.title;
+  modalBody.innerText = data.body;
+
+  modalBackdrop.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+modalClose.addEventListener("click", closeModal);
+modalBackdrop.addEventListener("click", (e) => {
+  if (e.target === modalBackdrop) closeModal();
+});
+
+function closeModal() {
+  modalBackdrop.style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+/* --------------------------
+   FLOATING HOME BUTTON
+--------------------------- */
+document.getElementById("floatingHome").addEventListener("click", () => {
+  document.querySelector("#home").scrollIntoView({ behavior: "smooth" });
+});
+
+/* --------------------------
+   FIXED DOWNLOAD CV BUTTON
+--------------------------- */
+document.getElementById("downloadBtn").addEventListener("click", () => {
+  const a = document.createElement("a");
+  a.href =
+    "./Shubhi Rathour - Portfolio_files/assets/ShubhiRathour_CV/assetsShubhi_Rathour_CV.pdf.pdf";
+  a.download = "Shubhi_Rathour_CV.pdf";
+  a.click();
+});
+</script>
+
+</body>
+</html>
